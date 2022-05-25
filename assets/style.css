@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    font-style: oblique;
+}
+
+@media screen and (max-width: 415px) {
+    body{
+        background-color: #005;
+    }
+    .nav-container {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20%;
+    }
+    .nav-container img{
+        width: 50px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+    }
+    .time-description{
+        display: flex;
+        width: 80%;
+        margin: auto;  
+        color: #fff
+
+    }
+    .time-description h1{
+        font-size: 90px;
+        padding-right: 20px;
+    }
+    
+    .menu-icons{
+        width: 80%;
+        height: 80px;
+        margin: auto;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    .icons-content{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .menu-icons img{
+        width: 60px;
+        border-radius: 50%;
+        border: 2px solid #ff3;
+        margin-top: 10px;
+        padding: 10px;
+
+    }
+    
+    .date{
+        flex-direction: row;
+        width: 70px;
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    .list{
+        background-color: #fff;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .list h1{
+        font-size: 30px;
+        color: violet;
+    }
+    .list-content{
+        margin-top: 20px;
+    }
+    .list ul li{
+        list-style: none;
+        padding-bottom: 25px;
+        display: flex;
+        font-size: 20px;
+    }
+    .list ul li input[type="checkbox"]{
+        margin-right: 20px;
+        width: 20px;
+        height: 16px;
+    }
+    .add{
+        width: 60px;
+        height: 60px;
+        background-color: red;
+        position: fixed;
+        
+        border-radius: 50%;
+        right: 0;
+        margin-right: 80px;
+        margin-top: -80px;
+        text-align: center;
+    }
+    .add h1{
+        padding-top: 15%;
+        color: #fff;
+    }
+}
