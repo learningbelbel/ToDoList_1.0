@@ -9,6 +9,8 @@
 @media screen and (max-width: 415px) {
     body{
         background-color: #005;
+        height: 100vh;
+        visibility: hidden;
     }
     .nav-container {
         width: 80%;
