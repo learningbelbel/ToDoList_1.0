@@ -152,6 +152,9 @@ body{
         background-color: #005;
         position: relative;
         box-sizing: border-box;
+        height: 100vh;
+        overflow: scroll;
+
     }
     .nav-container {
         width: 80%;
