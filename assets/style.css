@@ -6,11 +6,152 @@
     font-style: oblique;
 }
 
+body{
+    background-color: #005;
+}
+.nav-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+}
+.nav-container img{
+    width: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+.nav-container h1{
+    color: #fff;
+    font-size: 50px;
+    padding-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.time-description{
+    display: flex;
+    width: 80%;
+    margin: auto;  
+    color: #fff
+
+}
+.time-description h1{
+    font-size: 90px;
+    padding-right: 20px;
+}
+
+.menu-icons{
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.icons-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu-icons img{
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #ff3;
+    margin-top: 10px;
+    padding: 10px;
+}
+.menu-icons img:hover{
+    border: 10px solid #ff3;
+
+}
+.add-tarea{
+    width: 40%;
+    background-color: #f20;
+    
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: block;
+    justify-content: center;
+}
+.add-tarea input[type="text"]{
+    width: 70%;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    float: left;
+
+}
+.add-tarea button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    float: left;
+
+}
+.add-tarea input[type="date"]{
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    float: left;
+
+}
+
+.date{
+    flex-direction: row;
+    width: 70px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.list{
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: scroll;
+    margin-bottom: 0%;
+}
+.list h1{
+    font-size: 30px;
+    color: violet;
+}
+.list-content{
+    margin-top: 20px;
+}
+.list ul li{
+    list-style: none;
+    padding-bottom: 25px;
+    display: flex;
+    font-size: 20px;
+}
+.list ul li input[type="checkbox"]{
+    margin-right: 20px;
+    width: 20px;
+    height: 16px;
+}
+.add{
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    position: absolute;
+    
+    border-radius: 50%;
+    right: 0;
+    margin-right: 20%;
+    margin-top: -10%;
+    text-align: center;
+    z-index: 1;
+}
+.add h1{
+    padding-top: 20%;
+    color: #fff;
+}
+
 @media screen and (max-width: 415px) {
     body{
         background-color: #005;
-        height: 100vh;
-        visibility: hidden;
+        position: relative;
+        box-sizing: border-box;
     }
     .nav-container {
         width: 80%;
@@ -22,14 +163,17 @@
     .nav-container img{
         width: 50px;
         border-radius: 50%;
+        background-color: #fff;
         border: 2px solid #fff;
+    }
+    .nav-container h1{
+        display: none;
     }
     .time-description{
         display: flex;
         width: 80%;
         margin: auto;  
         color: #fff
-
     }
     .time-description h1{
         font-size: 90px;
@@ -69,6 +213,7 @@
         margin-top: 20px;
         border-radius: 10px;
         padding: 20px;
+        overflow: scroll;
     }
     .list h1{
         font-size: 30px;
@@ -93,15 +238,61 @@
         height: 60px;
         background-color: red;
         position: fixed;
-        
         border-radius: 50%;
         right: 0;
         margin-right: 80px;
-        margin-top: -80px;
+        margin-top: -150px;
         text-align: center;
     }
     .add h1{
         padding-top: 15%;
         color: #fff;
+    }
+
+    /*Add tarea*/
+    .add-tarea-background{
+        width: 100%;
+        height: 100vh;
+        margin-top: -100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+    .add-tarea-background h1{
+        color: #fff;
+        float: right;
+        margin-right: 20px;
+    }
+    .close{
+        display: block;
+    }
+    .add-tarea{
+        width: 80%;
+        background-color: #fff;
+        margin: auto;
+        margin-left: 10%;
+        height: 160px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10%;
+        border-radius: 10px;
+        position: absolute;
+    }
+    .add-tarea label{
+        margin-top: 15%;
+        margin-left: 10%;
+    }
+    .add-tarea input[type="date"],
+    .add-tarea input[type="text"]{
+        width: 80%;
+        margin: 1% 10%;
+    }
+    .add-tarea button{
+        float: right;
+        margin-right: 10%;
+        background-color: #f20;
+        color: #fff;
+        border: none;
+        margin-bottom: 20px;
+        padding-top: 10px;
     }
 }
