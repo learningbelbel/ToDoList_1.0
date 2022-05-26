@@ -1,3 +1,4 @@
+document.write("conected version 1.0")
 const botonAdd = document.getElementById("agregar")
 const addTarea = document.getElementById("add-tarea");
 const addsection = document.querySelector(".add")
@@ -11,6 +12,5 @@ botonAdd.addEventListener("click",()=>{
 closebtn.addEventListener("click",()=>{
     addTarea.classList.remove("open")
     addsection.classList.remove("close")
-
     
 })
